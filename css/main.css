@@ -53,13 +53,73 @@ header a {
     }
 }
 
+/* Start Main section */
+main  {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+main {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  main {
+    width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  main {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  main {
+    width: 1100px;
+  }
+}
+
+form {
+  margin: 20px auto;
+  width: 500px;
+}
+form fieldset {
+  padding: 20px;
+
+}
+.card {
+  background: #477d57;
+  color: #fff;
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  text-align: center;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+#containersec {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+/* End Main section */
 
 
 /* footer */
 footer {
     background-color:#12357d ;
-
     color: white;
     font-size: 20px;
     padding: 20px;
