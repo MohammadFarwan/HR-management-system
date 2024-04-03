@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background-color: #12357d;
+    background-color: #31363F;
     /* position: fixed; */
     color: #fff;
     padding: 20px;
@@ -66,9 +66,9 @@ main {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
 }
 
 @media (min-width: 768px) {
@@ -98,7 +98,7 @@ form fieldset {
 
 }
 .card {
-  background: #477d57;
+  background: #76ABAE;
   color: #fff;
   width: 300px;
   height: 300px;
@@ -180,7 +180,7 @@ h1.seperate {
 
 /* footer */
 footer {
-    background-color:#12357d ;
+    background-color:#222831 ;
     color: white;
     font-size: 20px;
     padding: 20px;
