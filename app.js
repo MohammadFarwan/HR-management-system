@@ -4,13 +4,13 @@ let contSec = document.getElementById("containersec");
 let EmployeeForm = document.getElementById("employeeForm");
 let departmentsArr =  ["Administration", "Finance", "Marketing", "Development" ]
 
-let p1 = new Employee(1000, "Ghazi Samer", "Administration", "Senior", "" )
-let p2 = new Employee(1001, "Lana Ali", "Finance", "Senior", "" )
-let p3 = new Employee(1002, "Tamara Ayoub", "Marketing", "Senior", "" )
-let p4 = new Employee(1003, "Safi Walid", "Administration", "Mid-Senior", "" )
-let p5 = new Employee(1004, "Omar Zaid", "Development", "Senior", "" )
-let p6 = new Employee(1005, "Rana Saleh", "Development", "Junior", "" )
-let p7 = new Employee(1006, "Hadi Ahmad", "Finance", "Mid-Senior", "" )
+let p1 = new Employee(1000, "Ghazi Samer", "Administration", "Senior", "https://raw.githubusercontent.com/LTUC/amman-prep-d16/main/Class-08/lab/assets/Ghazi.jpg" )
+let p2 = new Employee(1001, "Lana Ali", "Finance", "Senior", "https://raw.githubusercontent.com/LTUC/amman-prep-d16/main/Class-08/lab/assets/Lana.jpg" )
+let p3 = new Employee(1002, "Tamara Ayoub", "Marketing", "Senior", "https://raw.githubusercontent.com/LTUC/amman-prep-d16/main/Class-08/lab/assets/Tamara.jpg" )
+let p4 = new Employee(1003, "Safi Walid", "Administration", "Mid-Senior", "https://raw.githubusercontent.com/LTUC/amman-prep-d16/main/Class-08/lab/assets/Safi.jpg" )
+let p5 = new Employee(1004, "Omar Zaid", "Development", "Senior", "https://raw.githubusercontent.com/LTUC/amman-prep-d16/main/Class-08/lab/assets/Omar.jpg" )
+let p6 = new Employee(1005, "Rana Saleh", "Development", "Junior", "https://raw.githubusercontent.com/LTUC/amman-prep-d16/main/Class-08/lab/assets/Rana.jpg" )
+let p7 = new Employee(1006, "Hadi Ahmad", "Finance", "Mid-Senior", "https://raw.githubusercontent.com/LTUC/amman-prep-d16/main/Class-08/lab/assets/Hadi.jpg" )
 
 let employees = [p1, p2, p3, p4, p5, p6, p7];
 
@@ -52,19 +52,7 @@ Employee.prototype.render = function () {
     img.setAttribute("height", "100");
     img.setAttribute("width", "100");
     if (this.imageURL === "") {
-        if (
-            this.employeeID === 1000 || 
-            this.employeeID === 1001 || 
-            this.employeeID === 1002 || 
-            this.employeeID === 1003 || 
-            this.employeeID === 1004 || 
-            this.employeeID === 1005 || 
-            this.employeeID === 1006
-            ) {
-                img.setAttribute("src", `./../assets/${this.fullName.split(' ')[0]}.jpg`);
-        } else {
-            img.setAttribute("src", `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0e-9L-OuQW5Dqfbaqlpl84ptS0VWZbY1K_A&usqp=CAU`);
-        }
+        img.setAttribute("src", `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0e-9L-OuQW5Dqfbaqlpl84ptS0VWZbY1K_A&usqp=CAU`);
     } else {
         img.setAttribute("src", `${this.imageURL}`);
     }
