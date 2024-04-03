@@ -108,6 +108,10 @@ form fieldset {
   border-radius: 10px;
 }
 
+.card img{
+  border-radius: 50%;
+}
+
 #containersec {
   display: flex;
   flex-wrap: wrap;
