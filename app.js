@@ -1,6 +1,7 @@
 'use strict'
 
 let contSec = document.getElementById("containersec");
+let largcontainer = document.getElementById("largcontainer");
 let EmployeeForm = document.getElementById("employeeForm");
 let departmentsArr =  ["Administration", "Finance", "Marketing", "Development" ]
 
@@ -85,10 +86,7 @@ Employee.prototype.render = function () {
     cardDiv.appendChild(img);
     cardDiv.appendChild(infoDiv);
     infoEmp.appendChild(cardDiv);
-    contSec.appendChild(infoEmp);
-    document.body.appendChild(contSec);
-    
-    
+    contSec.appendChild(infoEmp);    
 }
 
 function renderSection(employees, departmentsArr) {
